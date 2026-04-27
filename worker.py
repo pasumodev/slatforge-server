@@ -126,7 +126,7 @@ try:
     import torch, trimesh, gc, copy, socket, json, time
     from PIL import Image, ImageGrab
     import numpy as np
-    import o_voxel.postprocess as o_voxel_postprocess
+    import trellis2.o_voxel.o_voxel_postprocess as o_voxel_postprocess
 except Exception as e:
     logging.error(f"Error during module importing: {e}", exc_info=True)
     raise RuntimeError("Failed to import modules. Please check the logs for details.")
